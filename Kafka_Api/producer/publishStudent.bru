@@ -1,0 +1,22 @@
+meta {
+  name: publishStudent
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/producer/publish/student
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":1,
+    "name":"Gopal",
+    "library":{
+       "id":1,
+    "name":"Library 1"
+    }
+  }
+}

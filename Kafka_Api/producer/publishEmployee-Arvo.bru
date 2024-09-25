@@ -1,0 +1,21 @@
+meta {
+  name: publishEmployee-Arvo
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/producer/publish/employee
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":"s01",
+    "firstName":"",
+    "middleName":"K",
+    "lastName":"",
+    "email":"sunil@gmail.com"
+  }
+}
